@@ -7,6 +7,6 @@ I've added three new features to the plugin:
 - automatically converting the value into either an Integer or Double when sending it to the optional callback function
 
 Simple example of using these three new features:
-$('#some_input').numeric ( { allowEmpty:true, live:true }, function ( val ) {
+```$('#some_input').numeric ( { allowEmpty:true, live:true }, function ( val ) {
   console.log ( val );
-});
+});```
