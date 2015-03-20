@@ -279,7 +279,7 @@ $.fn.numeric.blur = function()
 		if ( int_re.exec ( val ) != null ) callback.call(this, parseInt ( val ) );
 		else {
 			var double_re = new RegExp(negative?"-?":"" + "^\\d*" + decimal + "\\d+$" );
-			if ( double_re.exec ( val ) != null ) callback.call(this, parseDouble ( val ) );
+			if ( double_re.exec ( val ) != null ) callback.call(this, parseFloat ( val ) );
 		}
 	}
 };
